@@ -12,6 +12,7 @@ Clearly not: the proportion of votes to comments increases drastically. This doe
 We examine if the ratio of sarcastic comments to not changes across the week (0 is Monday); it does not.  
 ![comment_length](imgs/Comment_length.png)  
 There does seem to be somewhat of a difference in comment length when comparing the two, however.  
+![cloud](imgs/wordcloud.png)
 ### SVD
 Next, we attempt to reduce some of the hundreds of thousands of dimensions in our data with Truncated SVD. This is roughly comparable to PCA, however, because of the massive amounts of memory that our columns are taking up, we would rather feed a sparse matrix directly into our transformer, instead of densifying them and increasing the memory load. Despite this, there is a very small signal to be seen in the data, with the first component only explaining .24% of the variance and decreasing from there.  
 ![scree_plot](imgs/scree_plot.png)  
