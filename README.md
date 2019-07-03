@@ -16,3 +16,10 @@ Next, we attempt to reduce some of the hundreds of thousands of dimensions in ou
 ![scree_plot](imgs/scree_plot.png)  
 There's not much I can say about the topics apart from just showing them here.  
 ![topics](imgs/topic_list.png)
+### Modeling
+Initially, we started out building our models with a simple bag-of-words (BOW) approach. Unfortunately, this only results in 55-56% accuracy (especially bad considering that our data was balanced). The most successful models came from the Doc2Vec library - an alternative to BOW that vectorizes each word in relation to each other with respect to their definitions, regardless of document length.  
+![doc2vec](imgs/doc2vec.png)  
+It also uses the "Skip-Gram" method - instead of predicting one word at a time, we use one word to predict the surrounding words, or context. This is a *much* slower technique, but considerably more accurate with infrequent words.  
+This model achieved between 62-64%(!) accuracy.
+### Future possibilities
+There are a number of ways this project can diverge from here - apart from classifying text, we can use a modified model to attempt to build a sarcastic comment from a seed, or even attempt to de-sarcasticafy statements. Another option would be to explore the possibility of a continuous variable representing sarcasm - sometimes people are only half serious about topics. At any rate, it would certainly be interesting to test this model against human participation and see who comes out on top.
