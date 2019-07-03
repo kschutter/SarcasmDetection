@@ -1,4 +1,5 @@
 ![Title](imgs/sarcasm_title.png)
+![spongebob](imgs/sponge.jpg)
 ## A solid attempt at cracking the age old question on the internet: "Are they being serious??"
 ### Problem Statement
 As technology rapidly expands to encompass a large portion of our social interaction, some of its glaring setbacks have begun to show themselves. Namely, in this project, the difficulty of determining whether or not a random comment was completely serious or made in jest. This is not just a machine learning problem; we humans have a lot of difficulty distinguishing sarcasm without certain indicators. A common solution to this problem is the growing popularity of the "/s" tag, placed at the end of a comment to indicate that it was sarcastic in nature and mimicing html tags to show that the sarcasm is now over.  
