@@ -1,20 +1,14 @@
 import pandas as pd
-import numpy as np
 from tqdm import tqdm
-tqdm.pandas(desc="progress-bar")
 from gensim.models import Doc2Vec
 from sklearn import utils
 from sklearn.model_selection import train_test_split
-import gensim
 from sklearn.linear_model import LogisticRegression
 from gensim.models.doc2vec import TaggedDocument
-import re
-import seaborn as sns
 import matplotlib.pyplot as plt
 import nltk
-from nltk.corpus import stopwords
-from bs4 import BeautifulSoup
 import multiprocessing
+tqdm.pandas(desc="progress-bar")
 cores = multiprocessing.cpu_count()
 plt.style.use('ggplot')
 
