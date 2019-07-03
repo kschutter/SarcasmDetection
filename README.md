@@ -1,2 +1,1 @@
-# Sarcasm Detection
-# *Suuuure...*
+![Title](imgs/sarcasm_title.png)
